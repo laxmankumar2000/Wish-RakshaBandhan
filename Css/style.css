@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+}
+.rope{
+    position:absolute;
+    top:120px;
+    left: 25%;
+    z-index: 4;
+    text-align: center;
+}
+div{
+    display: block;
+}
+
+.leftcurtain{
+    width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      position: absolute;
+      z-index: 2;
+}
+.rightcurtain{
+    width: 100%;
+      height: 100%;
+      top: 0px;
+      right: 0px;
+      position: absolute;
+      z-index: 3;
+}
+
+.rightcurtain img, .leftcurtain img {
+    width: 100%;
+    height: 100%;
+}
+
+.m1{
+    position: fixed;
+    left: .8%;
+    width: auto;
+    height: 100%;
+    top: 1%;
+    color: #000;
+}
+.m2{
+    position: fixed;
+    right: .8%;
+    width: auto;
+    height: 100%;
+    top: 1%;
+    color: #000;
+}
+
+
+.maincontainer{
+    background: linear-gradient(to bottom,#ffffff 0% ,#ccffff 100%);
+    max-width: 450px;
+    min-height: 300px;
+    background-size: 100%,100%;
+    margin: 10px auto;
+    padding: 35px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    color:red;
+    padding-bottom: 60px;
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.14), 0 1px 14px 2px rgba(0,0,0,.12), 0 0 5px -3px rgba(0,0,0,.3);
+}
+
+.test{
+    padding: 0!important;
+    width: 100%!important;
+    text-align: center;
+    margin-top: 0!important;
+  margin-bottom: 0!important;
+}
+.name{
+    margin: auto!important;
+    padding: 0!important;
+    text-align: center;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+.test .name span{ 
+    min-width: 10px;
+    display:inline-block;
+    font-size: 3.5em;
+    user-select:none; 
+  animation:bounce 3s ease-in-out infinite;
+  }
+
+#demo{
+    font-size: 25px;
+    color:springgreen;
+    font-weight: bold;
+}
+.wishMessage{
+        color: #fff;
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 20px;
+        text-shadow: 0px 0px 10px #afafaf;
+      }
+.wishMessage p{
+        margin: 0.4em 0;   
+}
+.glow {
+    width:55%;
+    padding: 2px;
+    background-color:greenyellow	;
+    animation: glow 3.5s infinite;
+    font-size:30px;
+    font-family: 'Ranga';
+    color:red;
+    margin:auto;
+    font-weight: bold;
+    text-align:center;
+    border-radius:10px;
+    text-shadow:1px 2px 6px yellow;
+    }
+.kname{
+    font-size: 500px;
+
+    background:url(../Assests/kname.gif);
+    
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: swing 4s infinite;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-family: SF Espresso Shack;
+    padding: 0 10px;
+}
+.kname h1{
+    display: block;
+    font-size: 50px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+.enter-name input[type=name] {
+        background-color: #F19507;
+        color: black;
+        font-weight:bold;
+        border-radius: 10px;
+        box-sizing: border-box;
+        border:2px solid black;
+        padding: 5px;
+        position: fixed;
+        left: 10px;
+        bottom: 5px;
+        height: 50px;
+        width: 70%;
+        text-align: center;
+        font-size: 22px;
+        display: inline-block;
+ }
+ .enter-name input ::placeholder{
+     color: red;
+ }
+.enter-name .btn {
+        border-radius: 10px;
+        font-size: 21px;
+        
+        position: fixed;
+        right: 2px;
+        bottom: 5px;
+        height: 50px;
+        width: 23%;
+        display: inline-block;
+        color: white;
+        font-weight:600;
+        background-color: #F107CE;
+        border: 2px solid black;
+        letter-spacing: .5px;
+        transition: .2s ease-out;
+        cursor: pointer;
+        line-height: 36px;
+        outline: 0;
+        text-transform: uppercase;
+        vertical-align: middle;
+        text-decoration: none;
+        animation-duration: 4s !important;
+}
+.enter-name .btn span{
+    color:white;
+    padding: 3px;
+}
+    
+
+/* Animation classes */
+
+/* Animation class of slideshow of 5 pics  */
+.slideshow-container {
+    max-width: 80%;
+    position: relative;
+    height:280px;
+    margin: auto;
+}
+   
+/* Animation class of fade */
+
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+/* of 5 pics not used */
+#spinner1 {
+    -webkit-animation-name: spinner1;
+    animation-name: spinner1;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    display: block;
+}
+#spinner1:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+#spinner1 img {
+    position: absolute;
+    border: 1px solid #ccc;
+    background: rgba(255,255,255,0.8);
+    box-shadow: inset 0 0 0px rgba(0,0,0,0.2);
+}
+
+.rcard{
+    padding: 0 0 0 50px;	
+}
+
+
+
