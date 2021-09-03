@@ -4,16 +4,22 @@
 }
 body{
     text-align: center;
+    background: linear-gradient(to bottom,lightgreen 0% , green 100%);
+    background-attachment: fixed;
 }
 .rope{
     position:absolute;
-    top:120px;
-    left: 25%;
+    top:400px;
+    right: 22%;
     z-index: 4;
     text-align: center;
 }
 div{
     display: block;
+}
+#audio{
+    margin-top: -300px;
+    margin-left: -1900px;
 }
 
 .leftcurtain{
@@ -57,13 +63,15 @@ div{
 
 
 .maincontainer{
-    background: linear-gradient(to bottom,#ffffff 0% ,#ccffff 100%);
+    background: linear-gradient(to bottom,#ffffff -5% ,orange 50% ,red 100%);
+    /* background: url(../Assests/b1.jpg); */
     max-width: 450px;
     min-height: 300px;
     background-size: 100%,100%;
     margin: 10px auto;
     padding: 35px;
     background-attachment: fixed;
+    background-position: 10 100;
     background-repeat: no-repeat;
     text-align: center;
     color:red;
@@ -77,6 +85,9 @@ div{
     text-align: center;
     margin-top: 0!important;
   margin-bottom: 0!important;
+}
+#demo{
+    margin-top: 40px;
 }
 .name{
     margin: auto!important;
@@ -147,6 +158,9 @@ div{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+}
+.appear{
+    animation: appear 3s ease 2s infinite normal;
 }
 
 
@@ -248,5 +262,110 @@ animation-duration: 1.5s;
     padding: 0 0 0 50px;	
 }
 
+
+.suggestion{
+    font-size: 40px;
+    color: green;
+}
+.suggestion a{
+    text-decoration: none;
+}
+
+.glowing{
+    animation: glowing 1500ms infinite;
+    width:fit-content;
+    padding:10px;
+    border-radius: 20px;
+
+}
+
+@keyframes  glowing {
+    0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+    50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+    100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+
+
+
+/* form button  */
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    /* background-image: url(../Assests/kname.gif); */
+    color: white;
+    /* padding: 16px 20px; */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    /* position: fixed; */
+    /* bottom: 40%;
+    right: 28px; */
+    width:fit-content;
+  }
+  
+  /* The popup form - hidden by default */
+  .form-popup {
+    display:none;
+    position:fixed;
+    bottom: 200px;
+    right: 100px;
+    /* margin-right: 30%; */
+    /* margin-top: 10%; */
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    /* width: 10px; */
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    /* position: absolute; */
+    padding: 10px;
+    background-color: white;
+    
+  }
+  .form-container label {
+      text-align: left;
+  }
+  
+  /* Full-width input fields */
+  .form-container input[type=text], .form-container input[type=password] {
+    width: 80%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  /* When the inputs get focus, do something */
+  .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  
+  
 
 
