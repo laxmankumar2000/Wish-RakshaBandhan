@@ -264,11 +264,21 @@ animation-duration: 1.5s;
 
 
 .suggestion{
-    font-size: 40px;
+    font-size: 30px;
     color: green;
 }
+.suggestion ul {
+    margin-left:70px;
+    float: left;
+}
+/* d */
 .suggestion a{
     text-decoration: none;
+    /* margin-top: 10px; */
+    /* margin-left: -100px; */
+    font-size: 25   px;
+    /* text-align: left; */
+
 }
 
 .glowing{
@@ -280,11 +290,20 @@ animation-duration: 1.5s;
 }
 
 @keyframes  glowing {
-    0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
-    50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
-    100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+    0% { background-color: forestgreen; box-shadow: 0 10px 3px forestgreen; }
+    50% { background-color:greenyellow; box-shadow: 0 10px 40px greenyellow; }
+    100% { background-color:forestgreen; box-shadow: 0 10px 3px forestgreen; }
 }
-
+.jump{
+    animation: jump 1.5s ease 0s infinite normal;
+}
+.from{
+    font-size: 26px;
+    font-weight: 800;
+}
+.white{
+    /* background-image:url(../Assests/kname.gif); */
+}
 
 
 
@@ -308,13 +327,14 @@ animation-duration: 1.5s;
   .form-popup {
     display:none;
     position:fixed;
-    bottom: 200px;
+    bottom: 150px;
     right: 100px;
     /* margin-right: 30%; */
     /* margin-top: 10%; */
     border: 3px solid #f1f1f1;
     z-index: 9;
     /* width: 10px; */
+    /* text-shadow: 5px 10px 20px green; */
   }
   
   /* Add styles to the form container */
@@ -364,6 +384,17 @@ animation-duration: 1.5s;
   /* Add some hover effects to buttons */
   .form-container .btn:hover, .open-button:hover {
     opacity: 1;
+  }
+
+
+  .prompt{
+      font-size: 40px;
+      color: black;
+      position: fixed;
+      left: 80px;
+      top: 100px;
+      /* margin-bottom: 80px; */
+
   }
   
   

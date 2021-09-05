@@ -7,6 +7,7 @@
     <title>Happy Birthday</title>
     <link rel="stylesheet" href="./Css/style.css">
     <link rel="stylesheet" href="./Css/AnimationStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" />
 
 
 <!-- new sites for pic in window of new -->
@@ -225,6 +226,9 @@
          #FFEB3B;color:red ; animation: glowborder 3s infinite;"><marquee><b><i>“ Laxman Kumar की तरफ से आपको जन्मदिन  की हार्दिक शुभकामनायें!!”</b></i></marquee></span><br>
         <br>
         <br>
+        <button  style="font-size: 30px" onclick="myFunction2021()">Try it</button>
+
+            <p class="prompt" id="demo2"></p>
 
         
 
@@ -244,21 +248,23 @@
 
 
         <button class="open-button white from jump" onclick="openForm()">
-            <div class="glowing"><span style="background-image: url(./Assests/kname.gif) ;">Feedback Form</span> </div>
+            <div class="glowing"><span style="background-image: url(./Assests/kname.gif) ;color:mediumspringgreen;">Feedback Form</span> </div>
             </button>
 
-        <div class="form-popup" id="myForm">     
 
             
 
+        <div class="form-popup" id="myForm"> 
             <form action="/action_page.php" class="form-container">
                 <div class="suggestion">
-                    <p>if u have any suggestion </p>
-                    <a href="mailto:laxmankumarvashisth@gmail.com" > Email id</a><br>
+                    <p>Suggestions </p><br>
+                    <ul style="list-style-type: '❤'; color:red ; text-shadow: 5px 10px 20px red;" >
+                    <li><a href="mailto:laxmankumarvashisth@gmail.com" >Mail Me</a></li><br>
         
-                    <a href='https://wa.me/+917078225946' target='_blank'><i class= "fa fa-whatsapp"> fa-whatsapp</i></a>
+                    <li><a href='https://wa.me/+917078225946' target='_blank'><i class= "fa fa-whatsapp">Whatsapp Me</i></a></li><br>
+                    </ul>
                 </div>
-                <h1>Login</h1>
+                <h1>Login</h1><br>
 
                 <label style="text-align: left ; color: black;" for="email"><b>Email</b></label>
                 <input type="text" placeholder="Enter Email" name="email" required>
@@ -321,7 +327,52 @@
           dots[slideIndex-1].className += " active";
           setTimeout(showSlides, 2000); // Change image every 2 seconds
         }
-        </script>
+    </script>
+
+    <script>
+        function myFunction2021(){
+            let text ;
+            let frist;
+            let num = prompt("pls choode no. 1 and 2. 1 for prsnl and 2 for other")
+            if(num == null || num == "")
+            {
+                text = "user cancel the game";
+            }
+            // else {
+            //     text = "Hello " + num + "! How are you today?";
+            //  }
+            else if(num==1){
+                var text1 = prompt("what is date of iur first meet")
+                if(text1 == null || text1 == "")
+                text = "ur r follish";
+                else
+                {
+                    if(typeof text1 == 'number')
+                    text = "its number";
+                    else{
+                        text = "not number"
+                    }
+                    // text = " u enter wrong date";
+                }
+            }
+            else if(num==2)
+            {
+                let prompt2 = prompt("u have to find a clue");
+                if(prompt2==null || prompt2 =="")
+                {
+                    text = "U r follish1";
+                }
+                else{
+                    text = "Ur ans is wrong"
+                }
+            }
+            else{
+                text ="U enter wrong number"
+            }
+            document.getElementById("demo2").innerHTML = text;
+
+        }
+    </script>
 
 
 

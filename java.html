@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button  style="font-size: 30px" onclick="myFunction2021()">Try it</button>
+
+    <p id="demo2"></p>
+
+    <script>
+        function myFunction2021(){
+            let text  = 10;
+            // let num = prompt("pls choode no. 1 and 2. 1 for prsnl and 2 for other")
+            if(typeof text == 'number')
+            text = "its number";
+            // let frist;
+            // let num = prompt("pls choode no. 1 and 2. 1 for prsnl and 2 for other")
+            // if(num == null || num == "")
+            // {
+            //     text = "user cancel the game";
+            // }
+            // else {
+            //     text = "Hello " + person + "! How are you today?";
+            //  }
+            // else if(num==1){
+            //     let text1 = prompt("what is date of iur first meet")
+            //     if(text1 == null || text1 == "")
+            //     text = "ur r follish";
+            //     else
+            //     {
+            //         frist = " u enter wrong date";
+            //     }
+            // }
+            // else if(num==2)
+            // {
+            //     let prompt2 = prompt("u have to find a clue");
+            //     if(prompt2==null || prompt2 =="")
+            //     {
+            //         text = "U r follish1";
+            //     }
+            //     else{
+            //         text = "Ur ans is wrong"
+            //     }
+            // }
+            document.getElementById("demo2").innerHTML = text;
+
+        }
+    </script>
+    
+</body>
+</html>

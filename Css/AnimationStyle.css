@@ -366,16 +366,7 @@ to {opacity: 1}
     75%{transform:rotate3d(1,-1,0,20deg)}
 }
    
-.jump{
-    animation: jump 1.5s ease 0s infinite normal;
-}
-.from{
-    font-size: 26px;
-    font-weight: 800;
-}
-.white{
-    /* background-image:url(../Assests/kname.gif); */
-}
+
 @keyframes jump {
     0%,100%,20%,50%,80%{
         transform: translateY(0);
